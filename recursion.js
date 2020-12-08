@@ -34,7 +34,7 @@ console.log(factorial(3))
 // Factorial using Recursion
 function factorialRecur(num) {
   if (num === 1) return 1
-  return num * factorial(num - 1)
+  return num * factorialRecur(num - 1)
 }
 
 console.log(factorialRecur(3))

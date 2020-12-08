@@ -13,13 +13,12 @@ function collectOddsValues(arr) {
     }
     
 		helper(helperInput.slice(1));
-  }
-  
+	}
 	helper(arr);
 	return result;
 }
 
-console.log("odd values: ", collectOddsValues([...Array(12).keys()]))
+// console.log("odd values: ", collectOddsValues([...Array(12).keys()]))
 
 
 // Pure Recursion
@@ -38,7 +37,7 @@ function collectOddsValues2(arr) {
   return newArr
 }
 
-collectOddsValues2([...Array(5).keys()])
+console.log(collectOddsValues2([...Array(30).keys()]))
 // [1].concat(collectOddsValues2([2, 3, 4, 5]))
 //   [].concat(collectOddsValues2([3, 4, 5]))
 //     [3].concat(collectOddsValues2([4, 5]))
