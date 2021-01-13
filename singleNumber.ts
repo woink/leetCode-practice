@@ -12,3 +12,4 @@ function singleNumber(nums: number[]): any {
 };
 
 console.log(singleNumber([2, 2, 1]))
+
