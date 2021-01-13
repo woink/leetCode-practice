@@ -9,9 +9,9 @@ function hasGroupsSizeX(deck: number[]): boolean {
   }
 
   const vals = [...map.values()]
-  const maxValue = Math.max(...vals)
+  const g = vals[0]
 
-  for (let i = 0; i < maxValue; i++) {
+  for (let i = 0; i < vals.length; i++) {
     if (vals.every(el => el % i === 0)) return true
   }
 
