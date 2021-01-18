@@ -1,7 +1,7 @@
 function relativeSortArray(arr1: number[], arr2: number[]): number[] {
   // find the first element of arr2 in arr1
   // slice the arr1 and then place arr2 in 
-  let set = new Set<number>(arr1)
+  const set = new Set<number>(arr1)
 
   for (const num of arr1) {
     if (set.has(arr2[0])) {
