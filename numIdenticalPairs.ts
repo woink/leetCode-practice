@@ -12,3 +12,20 @@ function numIdenticalPairs(nums: number[]): number {
 
 const nums = [1, 2, 3, 1, 1, 3]
 console.log(numIdenticalPairs(nums))
+
+function numIdenticalPairs2(nums: number[]): number {
+  const map = new Map()
+  let pairs = 0
+
+  for (const num of nums) {
+    if (map.has(num)) {
+      pairs += map.get(num)
+      map.set(num, map.get(num) + 1)
+    } else {
+      map.set(num, 1)
+    }
+  }
+  return pairs
+}
+
+console.log(numIdenticalPairs2(nums))
