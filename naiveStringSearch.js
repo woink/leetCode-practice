@@ -11,7 +11,7 @@ function naiveSearch(long, short) {
     for (let j = 0; j < short.length; j++) {
       // long[i + j] ensures iteration will go through and reset the short word
       if (short[j] !== long[i + j]) break
-      if (j = short.length -1) count++
+      if (j === short.length - 1) count++
     }
   }
   console.log(count)

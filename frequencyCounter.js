@@ -3,15 +3,15 @@ function validAnagram(str1, str2) {
         return false;
     }
 
-    let frequency = {}
+    const frequency = {}
 
     for (let i = 0; i < str1.length; i++) {
-        let letter = str1[i]
+        const letter = str1[i]
         frequency[letter] ? frequency[letter] += 1 : frequency[letter] = 1
     }
 
     for (let i = 0; i < str2.length; i++) {
-        let letter = str2[i]
+        const letter = str2[i]
         if (!frequency[letter]) {
             return false
         } else {

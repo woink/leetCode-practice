@@ -7,7 +7,7 @@ function subtractProductAndSum(n: number): number {
     nSum += +num
   }
   return nProduct - nSum
-};
+}
 
-let n = 234
+const n = 234
 console.log(subtractProductAndSum(n))

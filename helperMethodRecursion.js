@@ -1,6 +1,6 @@
 // Simple Recursion w/ helper method
 function collectOddsValues(arr) {
-  let result = [];
+  const result = [];
   
   function helper(helperInput) {
     
