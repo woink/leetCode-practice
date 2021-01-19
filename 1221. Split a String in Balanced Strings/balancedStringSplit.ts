@@ -1,3 +1,5 @@
+const s = 'RLRRLLRLRL';
+
 function balancedStringSplit(s: string): number {
 	let markLetter = s[0],
 		first = 0,
@@ -16,5 +18,18 @@ function balancedStringSplit(s: string): number {
 	return count;
 }
 
-const s = 'RLRRLLRLRL';
-console.log(balancedStringSplit(s));
+console.log(balancedStringSplit2(s));
+
+function balancedStringSplit2(s: string): number {
+	let count = 0,
+		match = 0;
+
+	s.split('').map((c) => {
+		if (c === 'R') count++;
+		if (c === 'L') count--;
+		if (count === 0) match++;
+	});
+	return match;
+}
+
+console.log(balancedStringSplit2(s));
