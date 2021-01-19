@@ -12,12 +12,10 @@ Sort the elements of arr1 such that the relative ordering of items in arr1 are t
 
 - **Input:** arr1 = [2,3,1,3,2,4,6,7,9,2,19], arr2 = [2,1,4,3,9,6]
 - **Output:** [2,2,2,1,4,3,3,9,6,7,19]
- 
 
 **Constraints**:
 
-* `1 <= arr1.length, arr2.length <= 1000`
-* `0 <= arr1[i], arr2[i] <= 1000`
-* All the elements of `arr2` are **distinct**.
-* Each `arr2[i]` is in `arr1`.
-
+- `1 <= arr1.length, arr2.length <= 1000`
+- `0 <= arr1[i], arr2[i] <= 1000`
+- All the elements of `arr2` are **distinct**.
+- Each `arr2[i]` is in `arr1`.
