@@ -20,14 +20,14 @@ function numJewelsInStones(jewels: string, stones: string): number {
     }
   }
 
-  return isNaN(count) ? 0 : count
+  return count
 }
 
-// const jewels = "aA", stones = "aAAbbbb"
+const jewels = "aA", stones = "aAAbbbb"
 
 // const jewels = "z", stones = "ZZ"
 
-const jewels = "ebd", stones = "bbb"
+// const jewels = "ebd", stones = "bbb"
 
 console.log(numJewelsInStones(jewels, stones))
 
@@ -39,3 +39,5 @@ function numJewelsInStones2(jewels: string, stones: string): number {
   }
   return count
 }
+
+console.log(numJewelsInStones2(jewels, stones))
