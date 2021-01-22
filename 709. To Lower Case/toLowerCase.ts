@@ -2,7 +2,7 @@ function toLowerCase(str: string): string {
   const strArr = str.split('')
 
   for (let i = 0; i < str.length; i++) {
-    const letterChar: number = str.charCodeAt(i)
+    const letterChar = str.charCodeAt(i)
 
     if (letterChar < 93 && letterChar > 64) {
       strArr[i] = String.fromCharCode(letterChar + 32)
