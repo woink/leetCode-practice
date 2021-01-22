@@ -13,9 +13,9 @@
 // }
 
 function defangIPaddr(address: string): string {
-  return address.split('.').join('[.]')
+	return address.split('.').join('[.]');
 }
 
 // const address = "1.1.1.1"
-const address = "255.100.50.0"
-console.log(defangIPaddr(address))
+const address = '255.100.50.0';
+console.log(defangIPaddr(address));
