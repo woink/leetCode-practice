@@ -1,5 +1,15 @@
+// function defangIPaddr(address: string): string {
+//   return address.replaceAll('.', '[.]')
+// }
+
 function defangIPaddr(address: string): string {
-  return address.replaceAll('.', '[.]')
+  const addressArr = address.split('')
+
+  for (let i = 0; i < addressArr.length; i++) {
+    addressArr[i] === '.' && addressArr.splice(i, 1, '[.]')
+  }
+
+  return addressArr.join('')
 }
 
 // const address = "1.1.1.1"
