@@ -111,4 +111,3 @@ myLinkedList.remove(2)
 myLinkedList.reverse()
 console.log(myLinkedList.insert(2, 99));
 console.log(myLinkedList.printList())
-// console.log(myLinkedList)
