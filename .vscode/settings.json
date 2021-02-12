@@ -4,6 +4,7 @@
   "deno.lint": true,
   "conventionalCommits.scopes": [
     "solved",
-    "DataStructure"
+    "DataStructure",
+    "algorithms"
   ]
 }
