@@ -30,8 +30,8 @@ function findFactorialIterative(number: number): number {
 
 //Fibonacci
 
-function fibonacciIterative(n: number): number {
-	// O(n)
+// O(n)
+function fibonacciIterative(n: number): number { 
 	const arr = [0, 1];
 	for (let i = 2; i < n + 1; i++) {
 		arr.push(arr[i - 2] + arr[i - 1]);
@@ -39,8 +39,8 @@ function fibonacciIterative(n: number): number {
 	return arr[n];
 }
 
-function fibonacciRecursive(n: number): number {
-	// O(2^n)
+// O(2^n)
+function fibonacciRecursive(n: number): number { 
 	if (n < 2) return n;
 	return fibonacciRecursive(n - 1) + fibonacciRecursive(n - 2);
 }
